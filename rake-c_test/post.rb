@@ -3,7 +3,8 @@ class Post
   ##222####before_filter :check_weixin_legality
 
   def show
-    render :text => params[:echostr]  ### 验证URL有效性: echostr 随机字符串 
+    render :text => params[:echostr]  ### 验证URL有效性: echostr 随机字符串 若确认此次GET请求来自微信服务器，请原样返回echostr参数内容，则接入生效
+
   end
 
   def create
