@@ -1,0 +1,5 @@
+<appwizard><introduction><name></name><author>shunlichanqq</author><icon></icon><homepage></homepage><description><![CDATA[]]></description></introduction><platform><services><service></service></services><appconfig><tpl><![CDATA[
+1
+]]></tpl></appconfig></platform><code><initScript>index.php</initScript></code></appwizard>
+
+

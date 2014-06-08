@@ -1,0 +1,15 @@
+TextResponse Object
+(
+    [content:protected] => 
+    [template:protected] => <xml>
+<ToUserName><![CDATA[%s]]></ToUserName>
+<FromUserName><![CDATA[%s]]></FromUserName>
+<CreateTime>%s</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[%s]]></Content>
+<FuncFlag>%s<FuncFlag>
+</xml>
+    [toUserName:protected] => 
+    [fromUserName:protected] => 
+    [funcFlag:protected] => 0
+)
