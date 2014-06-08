@@ -118,7 +118,7 @@ end
     Finally, the uniq method returns a collection with duplicate values removed.
 
 After all that code – the vast majority of it boilerplate and constants, what do we have? A list of all the links to each recipient's page:
-
+```ruby
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
@@ -141,6 +141,7 @@ rows[1..-2].each do |row|
   end # done: hrefs.each
 
 end # done: rows.each
+```
 
 To have the scraper download and store each page to the hard drive, I make these additions:
 
