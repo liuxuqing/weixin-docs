@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  encoding: UTF-8
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+#
+development:
+  adapter: postgresql
+  encoding: UTF-8
+  database: sundb
+  pool: 5
+  username: rails
+  password: 123456
+  host: localhost
+#
+test:
+  <<: *default
+  database: sundb
+#
+production:
+  <<: *default
+  database: sundb
+  username: rails
+  password: <%= ENV['RAILSPOSTSQL_DATABASE_PASSWORD'] %>
+
+
