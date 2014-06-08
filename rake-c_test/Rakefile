@@ -1,0 +1,13 @@
+desc "Run Console"
+task :console do |t, args|
+  env = ENV['APP_ENV'] || 'development'
+  puts "Loading #{env} environment"
+  require "./post"
+  require "irb"
+  require 'irb/completion'
+  # 必须执行 ARGV.clear，不然 rake 后面的参数会被带到 IRB 里面
+  ARGV.clear
+  IRB.start
+end
+
+
